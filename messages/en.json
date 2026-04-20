@@ -1,0 +1,69 @@
+{
+  "common": {
+    "dashboard": "Dashboard",
+    "settings": "Settings",
+    "logout": "Logout",
+    "login": "Sign In",
+    "register": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "transactions": "Transactions",
+    "createPayment": "Create Payment",
+    "commission": "Commission",
+    "settings": "Settings",
+    "merchants": "Merchants",
+    "webhooks": "Webhooks",
+    "reports": "Reports"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome",
+    "gmv": "GMV (Month)",
+    "totalOrders": "Total Orders",
+    "successRate": "Success Rate",
+    "pending": "Pending",
+    "recentTransactions": "Recent Transactions",
+    "paymentMethods": "Payment Methods"
+  },
+  "payment": {
+    "title": "Payment",
+    "createPayment": "Create Payment",
+    "amount": "Amount",
+    "currency": "Currency",
+    "method": "Method",
+    "status": "Status",
+    "success": "Success",
+    "failed": "Failed",
+    "pending": "Pending"
+  },
+  "auth": {
+    "signIn": "Sign in to your account",
+    "signUp": "Create your merchant account",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?",
+    "signInButton": "Sign In",
+    "signUpButton": "Create Account",
+    "companyName": "Company Name",
+    "phone": "Phone Number",
+    "shopDomain": "Shop Domain (Optional)",
+    "agreeTerms": "I agree to the",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy"
+  }
+}

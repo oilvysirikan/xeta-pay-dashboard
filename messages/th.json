@@ -1,0 +1,69 @@
+{
+  "common": {
+    "dashboard": "แดชบอร์ด",
+    "settings": "ตั้งค่า",
+    "logout": "ออกจากระบบ",
+    "login": "เข้าสู่ระบบ",
+    "register": "สมัครสมาชิก",
+    "email": "อีเมล",
+    "password": "รหัสผ่าน",
+    "name": "ชื่อ",
+    "submit": "ส่ง",
+    "cancel": "ยกเลิก",
+    "save": "บันทึก",
+    "delete": "ลบ",
+    "edit": "แก้ไข",
+    "view": "ดู",
+    "search": "ค้นหา",
+    "filter": "กรอง",
+    "export": "ส่งออก",
+    "loading": "กำลังโหลด...",
+    "error": "ข้อผิดพลาด",
+    "success": "สำเร็จ"
+  },
+  "nav": {
+    "dashboard": "แดชบอร์ด",
+    "transactions": "ธุรกรรม",
+    "createPayment": "สร้างการชำระเงิน",
+    "commission": "ค่าคอมมิชชั่น",
+    "settings": "ตั้งค่า",
+    "merchants": "ร้านค้า",
+    "webhooks": "เว็บฮุค",
+    "reports": "รายงาน"
+  },
+  "dashboard": {
+    "title": "แดชบอร์ด",
+    "welcome": "ยินดีต้อนรับ",
+    "gmv": "GMV (เดือน)",
+    "totalOrders": "คำสั่งซื้อทั้งหมด",
+    "successRate": "อัตราความสำเร็จ",
+    "pending": "รอดำเนินการ",
+    "recentTransactions": "ธุรกรรมล่าสุด",
+    "paymentMethods": "วิธีการชำระเงิน"
+  },
+  "payment": {
+    "title": "การชำระเงิน",
+    "createPayment": "สร้างการชำระเงิน",
+    "amount": "จำนวนเงิน",
+    "currency": "สกุลเงิน",
+    "method": "วิธีการ",
+    "status": "สถานะ",
+    "success": "สำเร็จ",
+    "failed": "ล้มเหลว",
+    "pending": "รอดำเนินการ"
+  },
+  "auth": {
+    "signIn": "เข้าสู่ระบบบัญชีของคุณ",
+    "signUp": "สร้างบัญชีร้านค้าของคุณ",
+    "dontHaveAccount": "ยังไม่มีบัญชี?",
+    "alreadyHaveAccount": "มีบัญชีอยู่แล้ว?",
+    "signInButton": "เข้าสู่ระบบ",
+    "signUpButton": "สร้างบัญชี",
+    "companyName": "ชื่อบริษัท",
+    "phone": "เบอร์โทรศัพท์",
+    "shopDomain": "โดเมนร้านค้า (ไม่บังคับ)",
+    "agreeTerms": "ฉันยอมรับ",
+    "termsOfService": "เงื่อนไขการใช้งาน",
+    "privacyPolicy": "นโยบายความเป็นส่วนตัว"
+  }
+}
