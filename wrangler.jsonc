@@ -2,6 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
   "name": "payment-dashboard",
+  "pages_build_output_dir": "out",
   "compatibility_date": "2026-04-20",
   "compatibility_flags": [
     "nodejs_compat"

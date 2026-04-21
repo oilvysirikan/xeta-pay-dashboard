@@ -75,16 +75,20 @@ export default function SettingsPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-2">
-                  <Label htmlFor="lianlian-client">Client ID</Label>
-                  <Input id="lianlian-client" placeholder="LL_CLIENT_ID" />
+                  <Label htmlFor="lianlian-public">Public Key</Label>
+                  <Input id="lianlian-public" placeholder="LL_PUBLIC_KEY" />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="lianlian-secret">Client Secret</Label>
-                  <Input id="lianlian-secret" type="password" placeholder="LL_CLIENT_SECRET" />
+                  <Label htmlFor="lianlian-private">Private Key</Label>
+                  <Input id="lianlian-private" type="password" placeholder="LL_PRIVATE_KEY" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="lianlian-merchant">Merchant ID</Label>
                   <Input id="lianlian-merchant" placeholder="LL_MERCHANT_ID" />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="lianlian-sandbox">Sandbox URL</Label>
+                  <Input id="lianlian-sandbox" placeholder="LL_SANDBOX_URL" />
                 </div>
                 <div className="flex items-center justify-between">
                   <Badge variant="default">Enabled</Badge>
