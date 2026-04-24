@@ -19,6 +19,11 @@ database_id = "1897e56c-9a75-4bc7-823c-d61256f955b6"
 binding = "CACHE"
 id = "your-kv-id"
 
+# R2 bucket for OpenNext caching
+[[r2_buckets]]
+binding = "NEXT_INC_CACHE_R2_BUCKET"
+bucket_name = "payment-dashboard-cache"
+
 # Service bindings
 [[services]]
 binding = "ROUTER"

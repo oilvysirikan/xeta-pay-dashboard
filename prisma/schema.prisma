@@ -1,0 +1,65 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Merchant {
+  id               String    @id @default(cuid())
+  name             String
+  email            String    @unique
+  phone            String?
+  rapydWalletId    String?
+  rapydEwalletId   String?
+  apiKey           String    @unique
+  plan             String    @default("starter") // starter, business, enterprise
+  feeRate          Float     @default(0.025) // 2.5% for starter
+  status           String    @default("active") // active, suspended, pending
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  payments         Payment[]
+  commissions      Commission[]
+}
+
+model Payment {
+  id               String    @id @default(cuid())
+  merchantId       String
+  merchant         Merchant  @relation(fields: [merchantId], references: [id])
+  amount           Float
+  currency         String    @default("THB")
+  status           String    @default("pending") // pending, success, failed, canceled
+  rapydPaymentId   String?
+  qrCode           String?
+  qrExpiry         DateTime?
+  orderId          String?
+  paidAt           DateTime?
+  metadata         String?   // JSON string for additional data
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+  commissions      Commission[]
+}
+
+model Commission {
+  id               String    @id @default(cuid())
+  paymentId        String
+  payment          Payment   @relation(fields: [paymentId], references: [id])
+  merchantId       String
+  merchant         Merchant  @relation(fields: [merchantId], references: [id])
+  agentId          String?
+  amount           Float
+  feeAmount        Float
+  feeRate          Float
+  status           String    @default("pending") // pending, paid, failed
+  paidAt           DateTime?
+  createdAt        DateTime  @default(now())
+  updatedAt        DateTime  @updatedAt
+}

@@ -1,12 +1,19 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "payment-dashboard",
-  "pages_build_output_dir": "out",
-  "compatibility_date": "2026-04-20",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
-  "observability": {
-    "enabled": true
-  }
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "payment-dashboard",
+	"pages_build_output_dir": "out",
+	"compatibility_date": "2026-04-20",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"observability": {
+		"enabled": true
+	},
+	"r2_buckets": [
+		{
+			"bucket_name": "payment-dashboard-cache",
+			"binding": "payment_dashboard_cache",
+			"remote": true
+		}
+	]
 }
